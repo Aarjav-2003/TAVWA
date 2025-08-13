@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TAVWA - TheAarjav Vulnerable Web Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffd1dc, #ffe4ec);
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #c2185b;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .main-content {
+      background: #fff0f5;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .sidebar .list-group-item.active {
+      background-color: #ec407a;
+      border-color: #ec407a;
+    }
+    footer {
+      background: #ffd1dc;
+      padding: 15px;
+      margin-top: 20px;
+      border-top: 2px solid #ec407a;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#">TAVWA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon" style="color:white;">☰</span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Instructions</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Setup / Reset</a></li>
+      <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#aboutModal">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Body -->
+<div class="container">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3">
+      <div class="sidebar mb-3">
+        <h5 class="text-center mt-2">Quick Links</h5>
+        <div class="list-group">
+          <a href="#" class="list-group-item active">Home</a>
+          <a href="#" class="list-group-item">Instructions</a>
+          <a href="#" class="list-group-item">Setup / Reset</a>
+        </div>
+      </div>
+      <div class="sidebar">
+        <h5 class="text-center mt-2">Vulnerabilities</h5>
+        <div class="list-group">
+          <a href="#" class="list-group-item">SQL Injection</a>
+          <a href="#" class="list-group-item">SQL Injection (Blind)</a>
+          <a href="#" class="list-group-item">OS Command Injection</a>
+          <a href="#" class="list-group-item">XPATH Injection</a>
+          <a href="#" class="list-group-item">Formula Injection</a>
+          <a href="#" class="list-group-item">PHP Object Injection</a>
+          <a href="#" class="list-group-item">Unrestricted File Upload</a>
+          <a href="#" class="list-group-item">XSS - Reflected</a>
+          <a href="#" class="list-group-item">XSS - Stored</a>
+          <a href="#" class="list-group-item">XSS - DOM Based</a>
+          <a href="#" class="list-group-item">SSRF / XSPA</a>
+          <a href="#" class="list-group-item">File Inclusion</a>
+          <a href="#" class="list-group-item">Session Flaws</a>
+          <a href="#" class="list-group-item">IDOR</a>
+          <a href="#" class="list-group-item">Missing Access Control</a>
+          <a href="#" class="list-group-item">CSRF</a>
+          <a href="#" class="list-group-item">Cryptography</a>
+          <a href="#" class="list-group-item">Redirects & Forwards</a>
+          <a href="#" class="list-group-item">Server Side Template Injection</a>
+        </div>
+      </div>
+    </div>
+    <!-- Main Content -->
+    <div class="col-md-9">
+      <div class="main-content">
+        <h2 class="text-center" style="color:#c2185b;">TheAarjav Vulnerable Web Application (TAVWA)</h2>
+        <p>
+          Welcome to <strong>TAVWA</strong>, an intentionally vulnerable PHP/MySQL web application designed by Aarjav Sharma
+          for security learning and penetration testing practice in a safe environment.
+          This application contains numerous vulnerabilities for educational exploitation.
+        </p>
+        <h5 style="color:#c2185b;">Practice Areas:</h5>
+        <ul>
+          <li>SQL Injection (Error & Blind)</li>
+          <li>Command Injection</li>
+          <li>File Upload/Include Exploits</li>
+          <li>Reflected / Stored / DOM-based XSS</li>
+          <li>Session & Access Control Flaws</li>
+          <li>CSRF and SSRF Attacks</li>
+          <li>Weak Cryptography</li>
+          <li>Server Side Template Injection</li>
+        </ul>
+        <div class="alert alert-warning">
+          <strong>Disclaimer:</strong> Do NOT deploy TAVWA on any live or production server — it is intentionally insecure and meant only for offline labs.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <strong>TAVWA</strong> © 2025 — Created by Aarjav Sharma | Educational Use Only | GNU GPL v3
+</footer>
+
+<!-- About Modal -->
+<div class="modal fade" id="aboutModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="modal-header">
+        <h5>About TAVWA</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>
+          TheAarjav Vulnerable Web Application is built for educating students and security
+          professionals on common web application flaws in a safe, contained environment.
+        </p>
+        <p>Author: <strong>Aarjav Sharma</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
