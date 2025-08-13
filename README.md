@@ -7,7 +7,7 @@ This project is inspired by the concept of intentionally vulnerable applications
 ⚠ **Disclaimer**  
 Do NOT host TAVWA on a live or production server. It is deliberately insecure and must only be used in an offline lab or isolated virtual machine. The author is not responsible for any misuse.
 
----
+
 
 ## Features
 
@@ -30,7 +30,7 @@ TAVWA includes labs and scenarios for the following vulnerabilities:
 - **Unvalidated Redirects & Forwards**
 - **Server-Side Template Injection (SSTI)**
 
----
+
 
 ## Requirements
 
@@ -40,7 +40,7 @@ TAVWA includes labs and scenarios for the following vulnerabilities:
 - **Local Environment:** XAMPP, WAMP, MAMP, LAMP stack or Docker
 - **Browser:** Any modern browser
 
----
+
 
 ## Installation
 
@@ -73,7 +73,7 @@ git clone https://github.com/YOUR-USERNAME/TAVWA.git
 http://localhost/TAVWA/
 ```
 
----
+
 
 ## Usage
 
@@ -81,26 +81,26 @@ http://localhost/TAVWA/
 - **Testing Tools:** You may use Burp Suite, OWASP ZAP, or browser developer tools to simulate exploitation
 - **Reset:** Use the "Setup / Reset" option to restore default database values
 
----
+
 
 ## Project Structure
 
 <img width="602" height="338" alt="image" src="https://github.com/user-attachments/assets/23d196fc-50e4-4d81-a1b9-6abdbd7840a9" />
 
----
+
 
 ## Author
 
 **Aarjav Sharma**  
 Cybersecurity Enthusiast | Ethical Hacking & Forensics Student
 
----
+
 
 ## License
 
 This project is licensed under the **GNU General Public License v3.0** - see the [LICENSE](https://www.gnu.org/licenses/gpl-3.0.txt) file for details.
 
----
+
 
 ## Educational Purpose
 
@@ -109,7 +109,7 @@ TAVWA is meant for:
 - Practicing ethical hacking in labs
 - Demonstrating attacks and defenses to students or clients
 
----
+
 
 **Happy Hacking (Ethically) 🔐**
 
